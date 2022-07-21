@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/571effabb625ed9b0600107a
+
 DESCRIPTION:
 In javascript, Array is one of basic data types. Define an empty array can use var arr=new Array() or var arr=[]
 
