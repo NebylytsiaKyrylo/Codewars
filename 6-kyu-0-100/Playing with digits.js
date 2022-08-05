@@ -1,7 +1,9 @@
 /*
 https://www.codewars.com/kata/5552101f47fc5178b1000050
 
-Some numbers have funny properties. For example:
+Some numbers have funny properties.
+
+For example:
 
 89 --> 8¹ + 9² = 89 * 1
 
