@@ -20,6 +20,7 @@ function spinWords(string) {
     .join(' ');
 }
 
+//OPTION 2
 // const spinWords = string => string.replace(/\w{5,}/g, w => w.split('').reverse().join(''));
 
 console.log(spinWords('Hey fellow warriors')); // 'Hey wollef sroirraw'
