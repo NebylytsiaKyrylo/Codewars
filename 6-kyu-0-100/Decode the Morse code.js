@@ -39,12 +39,11 @@ The Morse code table is preloaded for you as a dictionary, feel free to use it:
 JavaScript: MORSE_CODE['.--'];
 */
 
-const decodeMorse = (morseCode) => {
-  return morseCode
+const decodeMorse = morseCode =>
+  morseCode
     .trim()
     .split('   ')
-    .map(a => a.split(' ').map((b) => MORSE_CODE[b]).join(''))
+    .map(a => a.split(' ').map(b => MORSE_CODE[b]).join(''))
     .join(' ');
-};
 
 console.log(decodeMorse('.... . -.--   .--- ..- -.. .')); // 'HEY JUDE'
