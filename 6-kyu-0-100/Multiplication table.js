@@ -21,7 +21,7 @@ for given example, the return value should be:
 [[1,2,3,4,5], [2,4,6,8,10], [3,6,9,12,15], [4,8,12,16,20], [5,10,15,20,25]];
 */
 
-const multiplicationTable = (size) => {
+const multiplicationTable = size => {
   let table = [];
 
   for (let i = 1; i <= size; i++) {

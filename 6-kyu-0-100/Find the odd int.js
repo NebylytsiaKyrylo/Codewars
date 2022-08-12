@@ -16,8 +16,15 @@ Examples
 
 function findOdd(A) {
   for (let i = 0; i <= A.length - 1; i++) {
-    if (A.filter((el) => el === A[i]).length % 2 != 0) {
+    if (A.filter(el => el === A[i]).length % 2 != 0) {
       return A[i];
     }
   }
 }
+
+
+console.log(findOdd([7])); //7
+console.log(findOdd([0])); //0
+console.log(findOdd([1, 1, 2])); //2
+console.log(findOdd([0, 1, 0, 1, 0])); //0
+console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1])); //4

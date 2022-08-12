@@ -21,10 +21,16 @@ Notes
 You can see another examples in the "Sample tests".
 */
 
-function meeting(s) {
-  return s
+let s = 'Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill';
+
+
+const meeting = s =>
+  s
     .split(';')
-    .map((a) => `(${a.toUpperCase().split(':').reverse().join(', ')})`)
+    .map(a => `(${a.toUpperCase().split(':').reverse().join(', ')})`)
     .sort()
     .join('');
-}
+
+
+console.log(meeting(s));
+//(CORWILL, ALFRED)(CORWILL, FRED)(CORWILL, RAPHAEL)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)(TORNBULL, BJON)

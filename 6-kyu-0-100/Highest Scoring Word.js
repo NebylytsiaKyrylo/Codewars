@@ -13,19 +13,17 @@ If two words score the same, return the word that appears earliest in the origin
 All letters will be lowercase and all inputs will be valid.
 */
 
-const high = (x) => {
-  const alphabet = Array.from({ length: 26 }, (v, k) => k + 65).map((v) =>
+const high = x => {
+  const alphabet = Array.from({ length: 26 }, (_, k) => k + 65).map(v =>
     String.fromCharCode(v).toLowerCase());
 
   let xToNumbersArr = x
     .split(' ')
-    .map((i) => i.split('').reduce((a, v) => a + alphabet.indexOf(v) + 1, 0));
+    .map(i => i.split('').reduce((a, v) => a + alphabet.indexOf(v) + 1, 0));
 
   return x.split(' ')[xToNumbersArr.indexOf(Math.max(...xToNumbersArr))];
 };
 
-//------------------2
-// function high(s){
-//   let as = s.split(' ').map(s=>[...s].reduce((a,b)=>a+b.charCodeAt(0)-96,0));
-//   return s.split(' ')[as.indexOf(Math.max(...as))];
-// }
+
+console.log(high('man i need a taxi up to ubud')); //taxi
+console.log(high('what time are we climbing up the volcano')); //volcano

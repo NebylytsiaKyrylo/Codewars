@@ -19,6 +19,6 @@ If you read "...It Should encode XXX", the "XXX" is the expected result, not the
 */
 
 const duplicateEncode = (word) => {
-  let arr = word.toLowerCase().split('')
+  let arr = word.toLowerCase().split('');
   return arr.reduce((acc, cur) => acc += arr.filter(x => x === cur).length > 1 ? ')' : '(', '');
 };
