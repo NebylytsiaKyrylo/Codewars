@@ -68,13 +68,8 @@ function dirReduc(arr) {
   let stackObj = { NORTH: 'SOUTH', SOUTH: 'NORTH', EAST: 'WEST', WEST: 'EAST' };
   let stack = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    if (stack[stack.length - 1] == stackObj[arr[i]]) {
-      stack.pop();
-    } else {
-      stack.push(arr[i]);
-    }
-  }
+  arr.forEach((dir) =>
+    stack[stack.length - 1] == stackObj[dir] ? stack.pop() : stack.push(dir));
 
   return stack;
 }
