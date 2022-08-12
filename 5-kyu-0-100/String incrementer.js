@@ -23,15 +23,11 @@ Attention: If the number has leading zeros the amount of digits should be consid
 */
 
 function incrementString(s) {
-  let string = (s.match(/[a-z0]+/) || []).join('');
+  let str = (s.match(/[a-z0]+/) || []).join('');
   let newNum = +s.replace(/[a-z0]+/, '') + 1;
-  let newString = string + newNum;
+  let newStr = str + newNum;
 
-  if (newString.length > s.length && /0/.test(string)) {
-    return newString.replace('0', '');
-  }
-
-  return newString;
+  return newStr.length > s.length && /0/.test(str) ? newStr.replace('0', '') : newStr;
 }
 
 
