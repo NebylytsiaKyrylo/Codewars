@@ -10,18 +10,18 @@ If anything in the text isn't a letter, ignore it and don't return it.
 
 "a" = 1, "b" = 2, etc.
 
-Example
+Example:
+
 alphabetPosition("The sunset sets at twelve o' clock.")
 Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
 */
 
-function alphabetPosition(text) {
-  return text
+const alphabetPosition = text =>
+  text
     .split('')
-    .filter((char) => /[a-z]/i.test(char))
-    .map((char) => char.toLowerCase().charCodeAt() - 96)
+    .filter(char => /[a-z]/i.test(char))
+    .map(char => char.toLowerCase().charCodeAt() - 96)
     .join(' ');
-}
 
 // function alphabetPosition(text) {
 //   if (text.match(/[a-z]/gi)) {

@@ -18,7 +18,7 @@ Examples:
 ""                                        =>  false
 */
 
-function generateHashtag (str) {
+function generateHashtag(str) {
   let hashtag = '#' + str.replace(/(^\w|\s\w)/g, x => x.toUpperCase()).replace(/\s/g, '');
   return hashtag.length <= 140 && hashtag.length > 1 ? hashtag : false;
 }

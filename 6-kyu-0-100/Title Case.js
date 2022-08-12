@@ -34,19 +34,18 @@ titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'
 */
 
 function titleCase(title, minorWords) {
-  let lowerCaseWords = minorWords
-    ? minorWords.split(' ').map((a) => a.toLowerCase())
-    : [];
+  let lowerCaseWords = minorWords ? minorWords.split(' ').map(a => a.toLowerCase()) : [];
 
   return title
     .toLowerCase()
     .split(' ')
-    .reduce((result, current, index) =>
-      current && index === 0 ||
-      current && !lowerCaseWords.includes(current)
-        ? result.concat(current[0].toUpperCase() + current.slice(1))
-        : result.concat(current),
-      [])
+    .reduce(
+      (result, current, index) =>
+        (current && index === 0) || (current && !lowerCaseWords.includes(current))
+          ? result.concat(current[0].toUpperCase() + current.slice(1))
+          : result.concat(current),
+      []
+    )
     .join(' ');
 }
 

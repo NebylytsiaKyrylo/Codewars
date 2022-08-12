@@ -18,4 +18,10 @@ Example
 */
 
 const duplicateCount = text =>
-  [...text].reduce((acc, cur) => [...text.toLowerCase()].filter(a => a == cur).length > 1 && !acc.includes(cur) ? acc.concat(cur) : acc, []).length;
+  [...text].reduce(
+    (acc, cur) =>
+      [...text.toLowerCase()].filter(a => a == cur).length > 1 && !acc.includes(cur)
+        ? acc.concat(cur)
+        : acc,
+    []
+  ).length;

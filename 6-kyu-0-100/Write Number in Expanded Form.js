@@ -13,11 +13,10 @@ expandedForm(70304); // Should return '70000 + 300 + 4'
 NOTE: All numbers will be whole numbers greater than 0.
 */
 
-function expandedForm(num) {
-  return String(num)
+const expandedForm = num =>
+  String(num)
     .split('')
     .reverse()
     .reduce((acc, cur, i) => (cur != 0 ? acc.concat(cur * 10 ** i) : acc), [])
     .reverse()
     .join(' + ');
-}

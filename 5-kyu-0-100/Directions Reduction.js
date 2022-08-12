@@ -68,8 +68,9 @@ function dirReduc(arr) {
   let stackObj = { NORTH: 'SOUTH', SOUTH: 'NORTH', EAST: 'WEST', WEST: 'EAST' };
   let stack = [];
 
-  arr.forEach((dir) =>
-    stack[stack.length - 1] == stackObj[dir] ? stack.pop() : stack.push(dir));
+  arr.forEach(dir =>
+    stack[stack.length - 1] == stackObj[dir] ? stack.pop() : stack.push(dir)
+  );
 
   return stack;
 }
@@ -88,7 +89,7 @@ function dirReduc(arr) {
 */
 
 console.log(
-  dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']),
+  dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST'])
 ); // ["WEST"]
 console.log(dirReduc(['NORTH', 'WEST', 'SOUTH', 'EAST'])); // ["NORTH", "WEST", "SOUTH", "EAST"]
 console.log(dirReduc(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST'])); //[]

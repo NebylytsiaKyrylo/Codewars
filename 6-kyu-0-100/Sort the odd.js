@@ -13,6 +13,6 @@ Examples
 */
 
 function sortArray(array) {
-  let arrayOddSort = array.filter((a) => a % 2 != 0).sort((a, b) => a - b);
-  return array.map((a) => (a % 2 ? arrayOddSort.shift() : a));
+  let arrayOddSort = array.filter(a => a % 2 != 0).sort((a, b) => a - b);
+  return array.map(a => (a % 2 ? arrayOddSort.shift() : a));
 }

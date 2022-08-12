@@ -25,9 +25,8 @@ You will not be tested with invalid input (input will always be an array).
 Order of the face (eyes, nose, mouth) elements will always be the same.
 */
 
-const countSmileys = (arr) =>
+const countSmileys = arr =>
   arr.reduce((total, cur) => (/(:|;)(-|~)?(\)|D)/.test(cur) ? (total += 1) : total), 0);
-
 
 //OPTION 2
 /*
@@ -40,7 +39,6 @@ const countSmileys = (arr) =>
 const countSmileys = (arr) =>
   arr.filter(v => /[:;][-~]?[)D]/.test(v)).length;
  */
-
 
 //return the total number of smiling faces in the array
 console.log(countSmileys([':)', ';(', ';}', ':-D'])); // should return 2;

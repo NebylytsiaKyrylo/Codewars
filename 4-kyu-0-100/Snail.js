@@ -23,7 +23,7 @@ the idea is to traverse the 2-d array in a clockwise snailshell pattern.
 NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array [[]].
 */
 
-const snail = (array) => {
+const snail = array => {
   let result = [];
 
   while (array.length) {

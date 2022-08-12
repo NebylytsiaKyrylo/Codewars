@@ -47,7 +47,7 @@ function towerBuilder(nFloors) {
 
   for (let i = 1; i <= nFloors; i++) {
     let space = ' '.repeat(nFloors - i);
-    let star = '*'.repeat((i * 2) - 1);
+    let star = '*'.repeat(i * 2 - 1);
     tower.push(`${space}${star}${space}`);
   }
 

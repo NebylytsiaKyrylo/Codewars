@@ -27,13 +27,13 @@ function incrementString(s) {
   let newNum = +s.replace(/[a-z0]+/, '') + 1;
   let newStr = str + newNum;
 
-  return newStr.length > s.length && /0/.test(str) ? newStr.replace('0', '') : newStr;
+  return newStr.length > s.length && /0/.test(str)
+    ? newStr.replace('0', '')
+    : newStr;
 }
-
 
 //OPTION 2
 // let incrementString = str => str.replace(/([0-8]|\d?9+)?$/, num => num ? +num + 1 : 1);
-
 
 //OPTION 3
 /*

@@ -10,7 +10,6 @@ pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
 pigIt('Hello world !');     // elloHay orldway !
 */
 
-
 const pigIt = str => str.replace(/(\w)(\w+)?(\s|$)/g, '$2$1ay$3');
 
 //OPTION 2

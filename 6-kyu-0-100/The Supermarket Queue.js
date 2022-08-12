@@ -38,11 +38,13 @@ P.S. The situation in this kata can be likened to the more-computer-science-rela
 */
 
 function queueTime(customers, n) {
-  let queue = customers.reduce((res, cur) => res.length < n ? res.concat(cur) : (res.sort((a, b) => a - b)[0] += cur, res), []);
+  let queue = customers.reduce(
+    (res, cur) => (res.length < n ? res.concat(cur) : ((res.sort((a, b) => a - b)[0] += cur), res)),
+    []
+  );
 
   return Math.max(...queue, 0);
 }
-
 
 //OPTION 2
 /*

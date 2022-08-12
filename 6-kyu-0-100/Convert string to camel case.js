@@ -10,9 +10,7 @@ Examples
 "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 */
 
-const toCamelCase = (str) =>
-  str.replace(/[-_]\w/g, x => x.toUpperCase()).replace(/[-_]/g, '');
-
+const toCamelCase = str => str.replace(/[-_]\w/g, x => x.toUpperCase()).replace(/[-_]/g, '');
 
 console.log(toCamelCase('')); //''
 console.log(toCamelCase('the_stealth_warrior')); // 'theStealthWarrior'

@@ -13,12 +13,11 @@ spinWords( "This is a test") => returns "This is a test"
 spinWords( "This is another test" )=> returns "This is rehtona test"
 */
 
-function spinWords(string) {
-  return string
+const spinWords = string =>
+  string
     .split(' ')
-    .map(word => word.length >= 5 ? word.split('').reverse().join('') : word)
+    .map(word => (word.length >= 5 ? word.split('').reverse().join('') : word))
     .join(' ');
-}
 
 //OPTION 2
 // const spinWords = string => string.replace(/\w{5,}/g, w => w.split('').reverse().join(''));

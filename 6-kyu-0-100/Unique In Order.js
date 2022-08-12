@@ -14,5 +14,4 @@ uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 */
 
-const uniqueInOrder = x =>
-  [...x].reduce((acc, v, i) => v !== x[i + 1] ? acc.concat(v) : acc,[]);
+const uniqueInOrder = x => [...x].reduce((acc, v, i) => (v !== x[i + 1] ? acc.concat(v) : acc), []);

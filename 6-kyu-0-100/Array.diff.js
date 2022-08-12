@@ -12,8 +12,8 @@ If a value is present in b, all of its occurrences must be removed from the othe
 arrayDiff([1,2,2,2,3],[2]) == [1,3]
 */
 
-const arrayDiff = (a, b) => a.reduce((res, cur) => b.includes(cur) ? res : res.concat(cur), []);
+const arrayDiff = (a, b) => a.reduce((res, cur) => (b.includes(cur) ? res : res.concat(cur)), []);
 
 // const arrayDiff = (a, b) => a.filter(x => !b.includes(x));
 
-console.log(arrayDiff([1,2,2,2,3],[2])); // [1,3]
+console.log(arrayDiff([1, 2, 2, 2, 3], [2])); // [1,3]

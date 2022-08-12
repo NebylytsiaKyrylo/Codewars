@@ -29,9 +29,14 @@ For Go: Empty string slice is expected when there are no anagrams found.
 */
 
 const anagrams = (word, words) =>
-  words.reduce((res, cur) => word.split('').sort().join('') === cur.split('').sort().join('') ? res.concat(cur) : res, []);
+  words.reduce(
+    (res, cur) =>
+      word.split('').sort().join('') === cur.split('').sort().join('')
+        ? res.concat(cur)
+        : res,
+    []
+  );
 
-  
 //OPTION 2
 // const anagrams = (word, words) =>
 //   words.filter(cur => word.split('').sort().join('') === cur.split('').sort().join(''));

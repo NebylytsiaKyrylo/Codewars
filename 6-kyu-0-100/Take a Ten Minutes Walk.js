@@ -22,7 +22,7 @@ It will never give you an empty array (that's not a walk, that's standing still!
 */
 
 function isValidWalk(walk) {
-  const dirLength = (direction) => walk.filter((x) => x === direction).length;
+  const dirLength = direction => walk.filter(x => x === direction).length;
   return (
     walk.length === 10 &&
     dirLength('n') - dirLength('s') === 0 &&

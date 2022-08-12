@@ -30,8 +30,8 @@ digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 */
 
-function digPow(n, p){
-  let k = `${n}`.split('').reduce((sum, cur, i) => sum + Math.pow(cur, p + i) ,0) / n;
+function digPow(n, p) {
+  let k = `${n}`.split('').reduce((sum, cur, i) => sum + Math.pow(cur, p + i), 0) / n;
   return Number.isInteger(k) ? k : -1;
 }
 

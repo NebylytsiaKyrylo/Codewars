@@ -11,11 +11,13 @@ Write a function that when given a URL as a string, parses out just the domain n
 - url = "https://www.cnet.com" -> domain name = cnet"
 
 ## Solution
+
 ```javascript
-const domainName = (url) => url.replace(/.+\/\/|www.|\..+/g, '');
+const domainName = url => url.replace(/.+\/\/|www.|\..+/g, '');
 ```
 
 ### Option 2
+
 ```javascript
 const domainName = url =>
   url
