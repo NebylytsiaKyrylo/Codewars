@@ -27,25 +27,24 @@ const snail = (array) => {
   let result = [];
 
   while (array.length) {
-  //1 - push() first row to result from array
-  result.push(...array.shift());
+    //1 - push() first row to result from array
+    result.push(...array.shift());
 
-  //2 - always check array after step 1
-  if (array.length == 0) break;
+    //2 - always check array after step 1
+    if (array.length == 0) break;
 
-  //3 - pop() last elements from subarray to result
-  for (let i = 0; i < array.length; i++) result.push(array[i].pop());
+    //3 - pop() last elements from subarray to result
+    array.forEach(subarray => result.push(subarray.pop()));
 
-  //4 - push() last row reversed to result from array
-  result.push(...array.pop().reverse());
+    //4 - push() last row reversed to result from array
+    result.push(...array.pop().reverse());
 
-  //5 - shift() first elements from subarrays to result
-  for (let i = array.length - 1; i >= 0; i--) result.push(array[i].shift());
+    //5 - shift() first elements from subarrays to result
+    for (let i = array.length - 1; i >= 0; i--) result.push(array[i].shift());
   }
 
   return result;
 };
-
 
 console.log(snail([[]])); //[]
 
@@ -69,7 +68,6 @@ console.log(
   ]),
 );
 //[1, 2, 3, 4, 5, 10, 15, 20, 25, 24, 23, 22, 21, 16, 11, 6, 7, 8, 9, 14, 19, 18, 17, 12, 13]
-
 
 console.log(
   snail([
