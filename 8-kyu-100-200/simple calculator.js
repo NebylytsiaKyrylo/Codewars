@@ -27,6 +27,7 @@ function calculator(a,b,sign){
       case '/': return a / b;
     }
   }
+  
   return 'unknown value';
 }
 

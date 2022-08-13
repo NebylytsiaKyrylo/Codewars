@@ -11,4 +11,4 @@ Your expected output is an array of positive integers from 1 to n (inclusive).
 Your job is to write an algorithm that gets you from the input to the output.
 */
 
-const preFizz = n => Array.from({length: n}, (_,x) => x + 1);
+const preFizz = n => Array.from({ length: n }, (_, x) => x + 1);

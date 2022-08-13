@@ -17,5 +17,4 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 */
 
-const countSheeps = arrayOfSheep =>
-  arrayOfSheep.reduce((a, b) => (b ? a + b : a), 0);
+const countSheeps = arrayOfSheep => arrayOfSheep.reduce((a, b) => (b ? a + b : a), 0);

@@ -18,6 +18,9 @@ remove("!!!Hi !!hi!!! !hi",5) === "Hi hi!!! !hi"
 remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
 */
 
+const remove = (s, n) => (n > 0 ? remove(s.replace(/!/, ''), n - 1) : s);
+
+//OPTION 3
 /*
 function remove(s,n){
   for (let i = 0; i < n; i++) {
@@ -26,10 +29,5 @@ function remove(s,n){
   return s;
 }
 */
-
-function remove(s,n){
-  return n > 0 ? remove(s.replace(/!/, ''), n - 1) : s;
-}
-
 
 console.log(remove('!!!Hi !!hi!!! !hi', 3)); //'Hi !!hi!!! !hi'

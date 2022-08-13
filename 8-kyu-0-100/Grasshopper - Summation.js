@@ -16,7 +16,7 @@ summation(8) -> 36
 */
 
 const summation = num =>
-  Array.from({ length: num }, (v, k) => k + 1).reduce((a, b) => a + b);
+  Array.from({ length: num }, (_, k) => k + 1).reduce((a, b) => a + b);
 
 
 // const summation = n => n * (n + 1) / 2;

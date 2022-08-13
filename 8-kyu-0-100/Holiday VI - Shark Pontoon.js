@@ -2,15 +2,21 @@
 https://www.codewars.com/kata/57e921d8b36340f1fd000059
 
 DESCRIPTION:
-Your friend invites you out to a cool floating pontoon around 1km off the beach. Among other things, the pontoon has a huge slide that drops you out right into the ocean, a small way from a set of stairs used to climb out.
+Your friend invites you out to a cool floating pontoon around 1km off the beach.
+Among other things, the pontoon has a huge slide that drops you out right into the ocean,
+a small way from a set of stairs used to climb out.
 
-As you plunge out of the slide into the water, you see a shark hovering in the darkness under the pontoon... Crap!
+As you plunge out of the slide into the water, you see a shark hovering
+in the darkness under the pontoon... Crap!
 
-You need to work out if the shark will get to you before you can get to the pontoon. To make it easier... as you do the mental calculations in the water you either freeze when you realise you are dead, or swim when you realise you can make it!
+You need to work out if the shark will get to you before you can get to the pontoon.
+To make it easier... as you do the mental calculations in the water you either
+freeze when you realise you are dead, or swim when you realise you can make it!
 
 You are given 5 variables;
 
-sharkDistance = distance from the shark to the pontoon. The shark will eat you if it reaches you before you escape to the pontoon.
+sharkDistance = distance from the shark to the pontoon. The shark will eat you
+if it reaches you before you escape to the pontoon.
 
 sharkSpeed = how fast it can move in metres/second.
 
@@ -25,19 +31,20 @@ The pontoon, you, and the shark are all aligned in one dimension.
 If you make it, return "Alive!", if not, return "Shark Bait!".
 */
 
-// function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
-//   if (dolphin) {
-//     return sharkDistance / (sharkSpeed / 2) > pontoonDistance / youSpeed
-//       ? 'Alive!'
-//       : 'Shark Bait!';
-//   }
-//   return sharkDistance / sharkSpeed > pontoonDistance / youSpeed
-//     ? 'Alive!'
-//     : 'Shark Bait!';
-// }
-
+//OPTION 1
+/*
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
-    return sharkDistance / (sharkSpeed / (dolphin ? 2 : 1)) > pontoonDistance / youSpeed
+  if (dolphin) {
+    return sharkDistance / (sharkSpeed / 2) > pontoonDistance / youSpeed
       ? 'Alive!'
       : 'Shark Bait!';
+  }
+  return sharkDistance / sharkSpeed > pontoonDistance / youSpeed
+    ? 'Alive!'
+    : 'Shark Bait!';
 }
+*/
+
+//OPTION 2
+const shark = (pDist, sDist, ySpeed, shSpeed, dolp) =>
+  sDist / (shSpeed / (dolp ? 2 : 1)) > pDist / ySpeed ? 'Alive!' : 'Shark Bait!';

@@ -12,4 +12,4 @@ Examples (input --> output):
 -100 --> "-100"
 */
 
-const numberToString = (num) => String(num);
+const numberToString = num => String(num);

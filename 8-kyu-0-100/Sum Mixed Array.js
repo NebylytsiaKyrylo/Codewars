@@ -7,4 +7,4 @@ Given an array of integers as strings and numbers, return the sum of the array v
 Return your answer as a number.
 */
 
-const sumMix = (x) => x.reduce((acc, cur) => acc + +cur, 0);
+const sumMix = x => x.reduce((acc, cur) => acc + +cur, 0);

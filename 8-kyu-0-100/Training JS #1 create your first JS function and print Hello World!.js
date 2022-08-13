@@ -19,7 +19,8 @@ function printWordToScreen(){
   var somewords="This is an example."
   console.log(somewords)
 }
-If we run this function, This is an example. will be seen on the screen. As you see, console.log() is an useful method help your work, you will become more and more like it.
+If we run this function, This is an example. will be seen on the screen.
+As you see, console.log() is an useful method help your work, you will become more and more like it.
 
 Task
 Please refer to two example above and write your first JS function.
@@ -30,7 +31,8 @@ use keyword function to define your function, function name should be helloWorld
 
 mission 2:
 
-use keyword var (or let or const) to define a variable str, value of str should be a string: "Hello World!"(don't forget the =).
+use keyword var (or let or const) to define a variable str, value of str should be a string:
+"Hello World!"(don't forget the =).
 
 mission 3:
 

@@ -12,6 +12,7 @@ Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
 If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
 */
 
-const sumOfDifferences = arr => arr.sort((a, b) => b - a).reduce((sum, cur, i) => i > 0 ? sum += (arr[i - 1] - cur) : sum, 0);
+const sumOfDifferences = arr =>
+  arr.sort((a, b) => b - a).reduce((sum, cur, i) => i > 0 ? (sum += arr[i - 1] - cur) : sum, 0);
 
-console.log(sumOfDifferences([2, 1, 10]));
+console.log(sumOfDifferences([2, 1, 10])); //9
