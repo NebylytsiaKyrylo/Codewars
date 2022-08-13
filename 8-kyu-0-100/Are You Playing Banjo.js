@@ -13,7 +13,5 @@ name + " does not play banjo"
 Names given are always valid strings.
 */
 
-const areYouPlayingBanjo = (name) =>
-  /^r/i.test(name)
-  ? `${name} plays banjo`
-  : `${name} does not play banjo`;
+const areYouPlayingBanjo = name =>
+  /^r/i.test(name) ? `${name} plays banjo` : `${name} does not play banjo`;

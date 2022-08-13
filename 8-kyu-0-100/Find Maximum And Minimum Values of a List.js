@@ -2,7 +2,9 @@
 https://www.codewars.com/kata/577a98a6ae28071780000989
 
 DESCRIPTION:
-Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
+Your task is to make two functions ( max and min, or maximum and minimum, etc.,
+  depending on the language ) that receive a list of integers as input,
+  and return the largest and lowest number in that list, respectively.
 
 Examples (Input -> Output)
 
@@ -12,6 +14,6 @@ Examples (Input -> Output)
 - [5]                             -> min = 5, max = 5
 */
 
-const min = (myArr) => Math.min(...myArr);
+const min = myArr => Math.min(...myArr);
 
-const max = (myArr) => Math.max(...myArr);
+const max = myArr => Math.max(...myArr);

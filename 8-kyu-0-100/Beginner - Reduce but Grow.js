@@ -8,4 +8,4 @@ Example:
 [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 */
 
-const grow = (x) => x.reduce((a, b) => a * b);
+const grow = x => x.reduce((a, b) => a * b);

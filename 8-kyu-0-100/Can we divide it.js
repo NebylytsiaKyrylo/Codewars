@@ -2,7 +2,8 @@
 https://www.codewars.com/kata/5a2b703dc5e2845c0900005a
 
 DESCRIPTION:
-Your task is to create the functionisDivideBy (or is_divide_by) to check if an integer number is divisible by both integers a and b.
+Your task is to create the functionisDivideBy (or is_divide_by)
+to check if an integer number is divisible by both integers a and b.
 
 A few cases:
 
@@ -16,5 +17,4 @@ A few cases:
 (15, -5, 3)   ->  true
 */
 
-const isDivideBy = (number, a, b) =>
-  Number.isInteger(number / a) && Number.isInteger(number / b);
+const isDivideBy = (number, a, b) => Number.isInteger(number / a) && Number.isInteger(number / b);

@@ -10,4 +10,8 @@ Example(Input => Output):
 0 => [0]
 */
 
-const digitize = n => String(n).split('').reverse().map((el) => Number(el));
+const digitize = n =>
+  String(n)
+    .split('')
+    .reverse()
+    .map(el => Number(el));

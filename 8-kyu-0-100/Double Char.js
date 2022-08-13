@@ -10,9 +10,8 @@ Examples (Input -> Output):
 - "1234!_ "     -> "11223344!!__  "
 */
 
-function doubleChar(str) {
-  return str
+const doubleChar = str =>
+  str
     .split('')
-    .map((a) => a + a)
+    .map(a => a + a)
     .join('');
-}

@@ -17,6 +17,4 @@ Example(Input --> Output)
 Note: In COBOL, it should return "found the needle at position 6"
 */
 
-function findNeedle(haystack) {
-  return `found the needle at position ${haystack.indexOf('needle')}`;
-}
+const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;

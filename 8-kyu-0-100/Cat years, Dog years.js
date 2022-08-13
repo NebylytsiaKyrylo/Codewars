@@ -29,7 +29,7 @@ http://www.catster.com/cats-101/calculate-cat-age-in-cat-years
 http://www.slate.com/articles/news_and_politics/explainer/2009/05/a_dogs_life.html
 */
 
-const humanYearsCatYearsDogYears = (humanYears) => [
+const humanYearsCatYearsDogYears = humanYears => [
   humanYears,
   humanYears === 1 ? 15 : humanYears === 2 ? 24 : 24 + (humanYears - 2) * 4,
   humanYears === 1 ? 15 : humanYears === 2 ? 24 : 24 + (humanYears - 2) * 5,
