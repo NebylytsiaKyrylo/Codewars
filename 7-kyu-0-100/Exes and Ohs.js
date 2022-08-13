@@ -13,10 +13,8 @@ XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 */
 
-const XO = (str) =>
-  (/x/.test(str) ? str.match(/x/gi).length : 0) ===
-  (/o/.test(str) ? str.match(/o/gi).length : 0);
-
+const XO = str =>
+  (/x/.test(str) ? str.match(/x/gi).length : 0) === (/o/.test(str) ? str.match(/o/gi).length : 0);
 
 // const XO = (str) => {
 //   let arr = str.toLowerCase().split('');

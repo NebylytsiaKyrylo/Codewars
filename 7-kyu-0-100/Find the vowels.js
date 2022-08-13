@@ -17,9 +17,7 @@ This is indexed from [1..n] (not zero indexed!)
 */
 
 const vowelIndices = word =>
-  word
-    .split('')
-    .reduce((res, cur, i) => (/[aeiouy]/i.test(cur) ? res.concat(i + 1) : res), []);
+  word.split('').reduce((res, cur, i) => (/[aeiouy]/i.test(cur) ? res.concat(i + 1) : res), []);
 
 //OPTION 2
 /*

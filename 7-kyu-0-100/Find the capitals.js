@@ -10,6 +10,4 @@ Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 */
 
 const capitals = word =>
-  word
-    .split('')
-    .reduce((a, v, i) => v === v.toUpperCase() ? a.concat(i) : a, []);
+  word.split('').reduce((a, v, i) => (v === v.toUpperCase() ? a.concat(i) : a), []);

@@ -19,8 +19,7 @@ checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 function checkExam(array1, array2) {
   let result = 0;
 
-  array2.forEach((el, i) =>
-    el ? el === array1[i] ? result += 4 : result -= 1 : 0);
+  array2.forEach((el, i) => (el ? (el === array1[i] ? (result += 4) : (result -= 1)) : 0));
 
   return Math.max(result, 0);
 }

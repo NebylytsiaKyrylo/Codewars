@@ -20,9 +20,10 @@ Then return the difference between the sum of the digits in total1 and total2:
 */
 
 function calc(x) {
-  let total1 = x.replace(/[a-z]/gi, (value) => value.charCodeAt());
+  let total1 = x.replace(/[a-z]/gi, value => value.charCodeAt());
   let total2 = total1.replace(/7/g, '1');
-  const sumNumbers = (total) =>
-    total.split('').reduce((a, b) => a + Number(b), 0);
+
+  const sumNumbers = total => total.split('').reduce((a, b) => a + Number(b), 0);
+
   return sumNumbers(total1) - sumNumbers(total2);
 }

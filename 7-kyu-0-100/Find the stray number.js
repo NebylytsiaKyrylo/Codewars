@@ -15,7 +15,6 @@ Examples
 
 const stray = n => n.find(a => n.indexOf(a) === n.lastIndexOf(a));
 
-
 // function stray(n) {
 //   return n.find(a => n.indexOf(a) === n.lastIndexOf(a));
 // }

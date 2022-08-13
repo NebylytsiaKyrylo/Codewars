@@ -12,4 +12,10 @@ Input: 145263 Output: 654321
 Input: 123456789 Output: 987654321
 */
 
-const descendingOrder = n => Number((n + '').split('').sort((a, b) => b - a).join(''));
+const descendingOrder = n =>
+  Number(
+    (n + '')
+      .split('')
+      .sort((a, b) => b - a)
+      .join('')
+  );

@@ -17,8 +17,8 @@ More examples in test cases. Good luck!
 */
 
 function solve(s) {
-  let upperLength = s.split('').filter((x) => x.match(/[A-Z]/)).length;
-  let lowerLength = s.split('').filter((x) => x.match(/[a-z]/)).length;
+  let upperLength = s.split('').filter(x => x.match(/[A-Z]/)).length;
+  let lowerLength = s.split('').filter(x => x.match(/[a-z]/)).length;
   return upperLength > lowerLength ? s.toUpperCase() : s.toLowerCase();
 }
 

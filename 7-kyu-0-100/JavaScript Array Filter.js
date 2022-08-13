@@ -13,4 +13,4 @@ const getEvenNumbers = numbersArray => numbersArray.filter(a => a % 2 === 0);
 
 // const getEvenNumbers = numbersArray => numbersArray.filter(a => !(a % 2));
 
-console.log(getEvenNumbers([2,4,5,6]));
+console.log(getEvenNumbers([2, 4, 5, 6]));
