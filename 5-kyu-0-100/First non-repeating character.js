@@ -21,6 +21,7 @@ an empty string ("") or None -- see sample tests.
 function firstNonRepeatingLetter(s) {
   let arr = s.toLowerCase().split('');
   let index = arr.findIndex(x => arr.indexOf(x) == arr.lastIndexOf(x));
+  
   return s[index] || '';
 }
 
