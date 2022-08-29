@@ -59,7 +59,20 @@ function productFib(prod) {
   return [f1, f2, f1 * f2 == prod];
 }
 
-//OPTION 2 with generated fib array
+//OPTION 2 without generated fib array
+/*
+function productFib(prod) {
+  let [f1, f2] = [0, 1];
+
+  while (f1 * f2 < prod) {
+    [f1, f2] = [f2, f1 + f2];
+  }
+
+  return [f1, f2, f1 * f2 == prod];
+}
+*/
+
+//OPTION 3 with generated fib array
 /*
 function productFib(prod) {
   let arrFib = [0, 1];
