@@ -14,4 +14,6 @@ function greet(name){
 }
 */
 
-const greet = name => name === 'Johnny' ? 'Hello, my love!' : `Hello, ${name}!`;
+const greet = name => `Hello, ${name === 'Johnny' ? 'my love' : name}!`;
+
+// const greet = name => name === 'Johnny' ? 'Hello, my love!' : `Hello, ${name}!`;
