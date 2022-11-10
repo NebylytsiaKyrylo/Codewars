@@ -11,4 +11,5 @@ Good luck :)
 
 const unusualFive = () => 'Hello'.length;
 
+
 console.log(unusualFive());
